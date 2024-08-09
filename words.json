@@ -26,5 +26,12 @@
     "meaning": "clear",
     "hint": "",
     "level": ""
+  },
+  {
+    "id": 5,
+    "word": "idyllic",
+    "meaning": "extreme happy",
+    "hint": "positive word",
+    "level": "EASY"
   }
 ]
