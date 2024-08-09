@@ -33,5 +33,12 @@
     "meaning": "extreme happy",
     "hint": "positive word",
     "level": "EASY"
+  },
+  {
+    "id": 6,
+    "word": "Abet",
+    "meaning": "Accomplice",
+    "hint": "help",
+    "level": "MEDIUM"
   }
 ]
