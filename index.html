@@ -3,23 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Words List</title>
     <style>
         body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+        }
+        #word-list {
+            max-width: 600px;
+            width: 100%;
+            margin: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .word-item {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .word-item:last-child {
+            border-bottom: none;
         }
         h1 {
+            text-align: center;
             color: #333;
         }
     </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div id="word-list">
+        <h1>Words List</h1>
+        <!-- Words will be displayed here -->
+    </div>
+    <script>
+        // Replace 'YOUR_FILE_ID' with your actual file ID from Google Drive
+        const fileId = '1iLGtehzKgHVXVqwJn50Qctls-0S9fU43';
+        const apiUrl = `https://drive.google.com/uc?export=download&id=${fileId}`;
+
+        fetch(apiUrl)
+            .then(response => response.json())
+            .then(data => {
+                const wordList = document.getElementById('word-list');
+
+                data.forEach(word => {
+                    const wordDiv = document.createElement('div');
+                    wordDiv.className = 'word-item';
+                    wordDiv.innerHTML = `
+                        <h2>${word.word}</h2>
+                        <p><strong>Definition:</strong> ${word.meaning}</p>
+                        <p><strong>Hint:</strong> ${word.hint}</p>
+                        <p><strong>Level:</strong> ${word.level}</p>
+                        <p><strong>Timestamp:</strong> ${word.timestamp}</p>
+                    `;
+                    wordList.appendChild(wordDiv);
+                });
+            })
+            .catch(error => console.error('Error loading words:', error));
+    </script>
 </body>
 </html>
