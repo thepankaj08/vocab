@@ -44,29 +44,37 @@
         <!-- Words will be displayed here -->
     </div>
     <script>
-        // Replace 'YOUR_FILE_ID' with your actual file ID from Google Drive
-        
-        const apiUrl = `https://thepankaj08.github.io/vocab/words.json`;
+        // Replace with your GitHub Pages URL
+        const fileUrl = 'https://thepankaj08.github.io/vocab/words.json';
 
-        fetch(apiUrl)
-            .then(response => response.json())
+        fetch(fileUrl)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
             .then(data => {
-                const wordList = document.getElementById('word-list');
-
-                data.forEach(word => {
-                    const wordDiv = document.createElement('div');
-                    wordDiv.className = 'word-item';
-                    wordDiv.innerHTML = `
-                        <h2>${word.word}</h2>
-                        <p><strong>Definition:</strong> ${word.meaning}</p>
-                        <p><strong>Hint:</strong> ${word.hint}</p>
-                        <p><strong>Level:</strong> ${word.level}</p>
-                        <p><strong>Timestamp:</strong> ${word.timestamp}</p>
-                    `;
-                    wordList.appendChild(wordDiv);
-                });
+                if (Array.isArray(data)) {
+                    const wordList = document.getElementById('word-list');
+                    data.forEach(word => {
+                        const wordDiv = document.createElement('div');
+                        wordDiv.className = 'word-item';
+                        wordDiv.innerHTML = `
+                            <h2>${word.word}</h2>
+                            <p><strong>Definition:</strong> ${word.meaning}</p>
+                            <p><strong>Hint:</strong> ${word.hint}</p>
+                            <p><strong>Level:</strong> ${word.level}</p>
+                            <p><strong>Timestamp:</strong> ${word.timestamp}</p>
+                        `;
+                        wordList.appendChild(wordDiv);
+                    });
+                } else {
+                    console.error('Unexpected JSON format:', data);
+                }
             })
             .catch(error => console.error('Error loading words:', error));
     </script>
 </body>
 </html>
+
