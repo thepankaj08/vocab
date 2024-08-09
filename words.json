@@ -1,1 +1,30 @@
-
+[
+  {
+    "id": 1,
+    "word": "Profligate",
+    "meaning": "Recklessly extravagant",
+    "hint": "Spend",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 2,
+    "word": "Churlish",
+    "meaning": "Rude",
+    "hint": "bad/negative/not polite",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 3,
+    "word": "confedrate",
+    "meaning": "Agreement",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 4,
+    "word": "Limpid",
+    "meaning": "clear",
+    "hint": "",
+    "level": ""
+  }
+]
