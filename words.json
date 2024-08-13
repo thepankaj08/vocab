@@ -40,5 +40,68 @@
     "meaning": "Accomplice",
     "hint": "help",
     "level": "MEDIUM"
+  },
+  {
+    "id": 7,
+    "word": "Fervent",
+    "meaning": "Very strong and sincere feeling about something.",
+    "hint": "curious",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 8,
+    "word": "Exultant",
+    "meaning": "Joyful or happy",
+    "hint": "Positive wors",
+    "level": "EASY"
+  },
+  {
+    "id": 9,
+    "word": "Exasperate",
+    "meaning": "Annoy or make someone angry",
+    "hint": "Negative word",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 10,
+    "word": "Etiology/Aetiology",
+    "meaning": "Study of cause of disease ",
+    "hint": "Study of cause of____",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 11,
+    "word": "Esoteric ",
+    "meaning": "Understood by only few with special knowledge ",
+    "hint": "Not known to everyone ",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 12,
+    "word": "Erudition ",
+    "meaning": "Profound scholarly knowledge ",
+    "hint": "scholar knowledge",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 13,
+    "word": "Ergomania ",
+    "meaning": "Extreme desire to work",
+    "hint": "",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 14,
+    "word": "Epithet",
+    "meaning": "Defamatory words or phrases ",
+    "hint": "adjective name",
+    "level": "EASY"
+  },
+  {
+    "id": 15,
+    "word": "Epistle ",
+    "meaning": "King serious letter on important subject",
+    "hint": "Letter",
+    "level": "HARD"
   }
 ]
