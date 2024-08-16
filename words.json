@@ -103,5 +103,12 @@
     "meaning": "King serious letter on important subject",
     "hint": "Letter",
     "level": "HARD"
+  },
+  {
+    "id": 16,
+    "word": "Elixir",
+    "meaning": "Substance that can cure/imporve something",
+    "hint": "amrit",
+    "level": "MEDIUM"
   }
 ]
