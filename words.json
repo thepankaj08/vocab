@@ -110,5 +110,12 @@
     "meaning": "Substance that can cure/imporve something",
     "hint": "amrit",
     "level": "MEDIUM"
+  },
+  {
+    "id": 17,
+    "word": "Effete",
+    "meaning": "Infertile/weak/incapable",
+    "hint": "",
+    "level": "MEDIUM"
   }
 ]
