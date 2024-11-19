@@ -239,7 +239,7 @@
   },
   {
     "id": 35,
-    "word": "Comp?re ",
+    "word": "Compere",
     "meaning": "Who introduces performers on stage",
     "hint": "",
     "level": ""
@@ -257,5 +257,12 @@
     "meaning": "False claim of skull or knowledge",
     "hint": "",
     "level": ""
+  },
+  {
+    "id": 38,
+    "word": "Feign",
+    "meaning": "Pretend ",
+    "hint": "",
+    "level": "MEDIUM"
   }
 ]
