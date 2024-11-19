@@ -159,5 +159,12 @@
     "meaning": "Flatter to gain favour",
     "hint": "Cajoling ",
     "level": ""
+  },
+  {
+    "id": 24,
+    "word": "Imbroglio",
+    "meaning": "Very complex situation",
+    "hint": "",
+    "level": "HARD"
   }
 ]
