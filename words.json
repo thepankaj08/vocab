@@ -124,5 +124,12 @@
     "meaning": "Extreme Patriotism ",
     "hint": "",
     "level": ""
+  },
+  {
+    "id": 19,
+    "word": "Refute",
+    "meaning": "Prove someone wrong",
+    "hint": "Contradiction",
+    "level": "HARD"
   }
 ]
