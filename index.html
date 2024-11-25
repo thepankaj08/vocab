@@ -29,16 +29,14 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: auto;
         }
-        .word-item {
-            width: 100%;
-            box-sizing: border-box;
-        }
         #controls {
             margin-top: 20px;
-            
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
         }
         button, input[type="checkbox"] {
-            margin: 5px;
             padding: 10px 20px;
             font-size: 3vw;
             background-color: #007bff;
@@ -53,7 +51,7 @@
         }
         #main-word {
             text-transform: uppercase;
-            font-size: 9vw;
+            font-size: 8vw;
             margin-bottom: 20px;
         }
         .revealable {
@@ -62,26 +60,41 @@
             margin: 10px 0;
         }
         #random-checkbox-label {
-            font-size: 2vw;
+            font-size: 3vw;
             cursor: pointer;
-            margin-left: auto;
+        }
+        @media (max-width: 600px) {
+            #main-word {
+                font-size: 10vw;
+            }
+            .revealable {
+                font-size: 6vw;
+            }
+            button, input[type="checkbox"] {
+                font-size: 4vw;
+                padding: 5vw;
+            }
+            #random-checkbox-label {
+                font-size: 4vw;
+            }
         }
     </style>
 </head>
 <body>
     <div id="word-list">
-        <label id="random-checkbox-label">
+        <div id="controls">
+            <button id="prev-btn">Previous</button>
+            <label id="random-checkbox-label">
                 <input type="checkbox" id="random-checkbox"> Random
             </label>
+            <button id="next-btn">Next</button>
+        </div>
         <div id="word-item">
             <!-- Word content will be inserted here -->
         </div>
         <div id="controls">
-            <button id="prev-btn">Previous</button>
             <button id="reveal-hint-btn">Show Hint</button>
             <button id="reveal-meaning-btn">Show Meaning</button>
-            <button id="next-btn">Next</button>
-            
         </div>
     </div>
     <script>
@@ -93,20 +106,11 @@
         let randomOrder = [];
 
         fetch(fileUrl)
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(data => {
-                if (Array.isArray(data)) {
-                    words = data;
-                    initializeRandomOrder();
-                    displayWord(currentIndex);
-                } else {
-                    console.error('Unexpected JSON format:', data);
-                }
+                words = data;
+                initializeRandomOrder();
+                displayWord(currentIndex);
             })
             .catch(error => console.error('Error loading words:', error));
 
@@ -129,10 +133,7 @@
                 <h2 id="main-word">${words[wordIndex].word}</h2>
                 <p id="word-hint" class="revealable"><strong>Hint:</strong> ${words[wordIndex].hint}</p>
                 <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${words[wordIndex].meaning}</p>
-                <p id="word-level" class="revealable"><strong>Level:</strong> ${words[wordIndex].level}</p>
             `;
-
-            // Reset visibility of hint and meaning
             document.querySelectorAll('.revealable').forEach(elem => elem.style.display = 'none');
         }
 
@@ -147,20 +148,23 @@
         });
 
         document.getElementById('reveal-hint-btn').addEventListener('click', () => {
-            const hintElement = document.getElementById('word-hint');
-            hintElement.style.display = hintElement.style.display === 'block' ? 'none' : 'block';
+            toggleVisibility('word-hint');
         });
 
         document.getElementById('reveal-meaning-btn').addEventListener('click', () => {
-            const meaningElement = document.getElementById('word-meaning');
-            meaningElement.style.display = meaningElement.style.display === 'block' ? 'none' : 'block';
+            toggleVisibility('word-meaning');
         });
 
         document.getElementById('random-checkbox').addEventListener('change', (event) => {
             isRandom = event.target.checked;
-            currentIndex = 0; // Reset to first word
+            currentIndex = 0; 
             displayWord(currentIndex);
         });
+
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
     </script>
 </body>
 </html>
