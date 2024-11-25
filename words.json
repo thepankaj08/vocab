@@ -1,192 +1,192 @@
 [
   {
     "id": 1,
-    "word": "Profligate",
-    "meaning": "Recklessly extravagant",
-    "hint": "Spend",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 2,
-    "word": "Churlish",
-    "meaning": "Rude",
-    "hint": "bad/negative/not polite",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 3,
-    "word": "confedrate",
-    "meaning": "Agreement",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 4,
-    "word": "Limpid",
-    "meaning": "clear",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 5,
-    "word": "idyllic",
-    "meaning": "extreme happy",
-    "hint": "positive word",
-    "level": "EASY"
-  },
-  {
-    "id": 6,
     "word": "Abet",
     "meaning": "Accomplice",
     "hint": "help",
     "level": "MEDIUM"
   },
   {
+    "id": 2,
+    "word": "Badinage ",
+    "meaning": "Playful ridicule",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 3,
+    "word": "Balmy",
+    "meaning": "Pleasant/Gentle",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 4,
+    "word": "Barb",
+    "meaning": "Sarcastic/hurtful comment",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 5,
+    "word": "Caucus",
+    "meaning": "Party meeting to elect candidate",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 6,
+    "word": "Charlatan ",
+    "meaning": "False claim of skull or knowledge",
+    "hint": "",
+    "level": ""
+  },
+  {
     "id": 7,
-    "word": "Fervent",
-    "meaning": "Very strong and sincere feeling about something.",
-    "hint": "curious",
+    "word": "Churlish",
+    "meaning": "Rude",
+    "hint": "bad/negative/not polite",
     "level": "MEDIUM"
   },
   {
     "id": 8,
-    "word": "Exultant",
-    "meaning": "Joyful or happy",
-    "hint": "Positive wors",
-    "level": "EASY"
+    "word": "Compere",
+    "meaning": "Who introduces performers on stage",
+    "hint": "",
+    "level": ""
   },
   {
     "id": 9,
-    "word": "Exasperate",
-    "meaning": "Annoy or make someone angry",
-    "hint": "Negative word",
-    "level": "MEDIUM"
+    "word": "confedrate",
+    "meaning": "Agreement",
+    "hint": "",
+    "level": ""
   },
   {
     "id": 10,
-    "word": "Etiology/Aetiology",
-    "meaning": "Study of cause of disease ",
-    "hint": "Study of cause of____",
-    "level": "MEDIUM"
+    "word": "Corpus",
+    "meaning": "Collection of our written text",
+    "hint": "",
+    "level": ""
   },
   {
     "id": 11,
-    "word": "Esoteric ",
-    "meaning": "Understood by only few with special knowledge ",
-    "hint": "Not known to everyone ",
-    "level": "MEDIUM"
+    "word": "Delirium ",
+    "meaning": "Disturbed state of mind",
+    "hint": "",
+    "level": ""
   },
   {
     "id": 12,
-    "word": "Erudition ",
-    "meaning": "Profound scholarly knowledge ",
-    "hint": "scholar knowledge",
-    "level": "MEDIUM"
+    "word": "Deprecate",
+    "meaning": "Strong disapproval",
+    "hint": "",
+    "level": ""
   },
   {
     "id": 13,
-    "word": "Ergomania ",
-    "meaning": "Extreme desire to work",
+    "word": "Deride",
+    "meaning": "Laugh at something in cruel way",
     "hint": "",
-    "level": "MEDIUM"
+    "level": ""
   },
   {
     "id": 14,
-    "word": "Epithet",
-    "meaning": "Defamatory words or phrases ",
-    "hint": "adjective name",
-    "level": "EASY"
-  },
-  {
-    "id": 15,
-    "word": "Epistle ",
-    "meaning": "King serious letter on important subject",
-    "hint": "Letter",
-    "level": "HARD"
-  },
-  {
-    "id": 16,
-    "word": "Elixir",
-    "meaning": "Substance that can cure/imporve something",
-    "hint": "amrit",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 17,
     "word": "Effete",
     "meaning": "Infertile/weak/incapable",
     "hint": "",
     "level": "MEDIUM"
   },
   {
-    "id": 18,
-    "word": "Jingoism",
-    "meaning": "Extreme Patriotism ",
+    "id": 15,
+    "word": "Elixir",
+    "meaning": "Substance that can cure/imporve something",
+    "hint": "amrit",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 16,
+    "word": "Embargo",
+    "meaning": "Official order to stop doing business",
     "hint": "",
     "level": ""
+  },
+  {
+    "id": 17,
+    "word": "Enigmatic ",
+    "meaning": "Difficult to understand",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 18,
+    "word": "Epistle ",
+    "meaning": "King serious letter on important subject",
+    "hint": "Letter",
+    "level": "HARD"
   },
   {
     "id": 19,
-    "word": "Refute",
-    "meaning": "Prove someone wrong",
-    "hint": "Contradiction",
-    "level": "HARD"
+    "word": "Epithet",
+    "meaning": "Defamatory words or phrases ",
+    "hint": "adjective name",
+    "level": "EASY"
   },
   {
     "id": 20,
-    "word": "Irascible ",
-    "meaning": "Who easily gets irritated",
+    "word": "Ergomania ",
+    "meaning": "Extreme desire to work",
     "hint": "",
-    "level": ""
+    "level": "MEDIUM"
   },
   {
     "id": 21,
-    "word": "Inexorable ",
-    "meaning": "Impossible to stop or prevent",
-    "hint": "",
-    "level": ""
+    "word": "Erudition ",
+    "meaning": "Profound scholarly knowledge ",
+    "hint": "scholar knowledge",
+    "level": "MEDIUM"
   },
   {
     "id": 22,
-    "word": "Inquisitive ",
-    "meaning": "Curious",
-    "hint": "",
-    "level": ""
+    "word": "Esoteric ",
+    "meaning": "Understood by only few with special knowledge ",
+    "hint": "Not known to everyone ",
+    "level": "MEDIUM"
   },
   {
     "id": 23,
-    "word": "Ingratiate ",
-    "meaning": "Flatter to gain favour",
-    "hint": "Cajoling ",
-    "level": ""
+    "word": "Etiology/Aetiology",
+    "meaning": "Study of cause of disease ",
+    "hint": "Study of cause of____",
+    "level": "MEDIUM"
   },
   {
     "id": 24,
-    "word": "Imbroglio",
-    "meaning": "Very complex situation",
-    "hint": "",
-    "level": "HARD"
+    "word": "Exasperate",
+    "meaning": "Annoy or make someone angry",
+    "hint": "Negative word",
+    "level": "MEDIUM"
   },
   {
     "id": 25,
-    "word": "Histrionic",
-    "meaning": "Very dramatic",
-    "hint": "",
-    "level": ""
+    "word": "Exultant",
+    "meaning": "Joyful or happy",
+    "hint": "Positive wors",
+    "level": "EASY"
   },
   {
     "id": 26,
-    "word": "Impale",
-    "meaning": "Pierce through",
+    "word": "Feign",
+    "meaning": "Pretend ",
     "hint": "",
-    "level": ""
+    "level": "MEDIUM"
   },
   {
     "id": 27,
-    "word": "Imperious ",
-    "meaning": "Arrogant/demanding",
-    "hint": "",
-    "level": ""
+    "word": "Fervent",
+    "meaning": "Very strong and sincere feeling about something.",
+    "hint": "curious",
+    "level": "MEDIUM"
   },
   {
     "id": 28,
@@ -197,113 +197,120 @@
   },
   {
     "id": 29,
-    "word": "Enigmatic ",
-    "meaning": "Difficult to understand",
+    "word": "Histrionic",
+    "meaning": "Very dramatic",
     "hint": "",
     "level": ""
   },
   {
     "id": 30,
-    "word": "Embargo",
-    "meaning": "Official order to stop doing business",
-    "hint": "",
-    "level": ""
+    "word": "idyllic",
+    "meaning": "extreme happy",
+    "hint": "positive word",
+    "level": "EASY"
   },
   {
     "id": 31,
-    "word": "Deride",
-    "meaning": "Laugh at something in cruel way",
+    "word": "Imbroglio",
+    "meaning": "Very complex situation",
     "hint": "",
-    "level": ""
+    "level": "HARD"
   },
   {
     "id": 32,
-    "word": "Deprecate",
-    "meaning": "Strong disapproval",
+    "word": "Impale",
+    "meaning": "Pierce through",
     "hint": "",
     "level": ""
   },
   {
     "id": 33,
-    "word": "Delirium ",
-    "meaning": "Disturbed state of mind",
+    "word": "Imperious ",
+    "meaning": "Arrogant/demanding",
     "hint": "",
     "level": ""
   },
   {
     "id": 34,
-    "word": "Corpus",
-    "meaning": "Collection of our written text",
+    "word": "Inexorable ",
+    "meaning": "Impossible to stop or prevent",
     "hint": "",
     "level": ""
   },
   {
     "id": 35,
-    "word": "Compere",
-    "meaning": "Who introduces performers on stage",
-    "hint": "",
+    "word": "Ingratiate ",
+    "meaning": "Flatter to gain favour",
+    "hint": "Cajoling ",
     "level": ""
   },
   {
     "id": 36,
-    "word": "Caucus",
-    "meaning": "Party meeting to elect candidate",
+    "word": "Inquisitive ",
+    "meaning": "Curious",
     "hint": "",
     "level": ""
   },
   {
     "id": 37,
-    "word": "Charlatan ",
-    "meaning": "False claim of skull or knowledge",
+    "word": "Irascible ",
+    "meaning": "Who easily gets irritated",
     "hint": "",
     "level": ""
   },
   {
     "id": 38,
-    "word": "Feign",
-    "meaning": "Pretend ",
+    "word": "Jingoism",
+    "meaning": "Extreme Patriotism ",
     "hint": "",
-    "level": "MEDIUM"
+    "level": ""
   },
   {
     "id": 39,
-    "word": "Proletariat ",
-    "meaning": "Working class people",
+    "word": "Limpid",
+    "meaning": "clear",
     "hint": "",
     "level": ""
   },
   {
     "id": 40,
-    "word": "Thwart",
-    "meaning": "To prevent someone from accomplishing something/Hindrance",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 41,
     "word": "Preponderance ",
     "meaning": "Abundant",
     "hint": "",
     "level": ""
   },
   {
+    "id": 41,
+    "word": "Profligate",
+    "meaning": "Recklessly extravagant",
+    "hint": "Spend",
+    "level": "MEDIUM"
+  },
+  {
     "id": 42,
-    "word": "Badinage ",
-    "meaning": "Playful ridicule",
+    "word": "Proletariat ",
+    "meaning": "Working class people",
     "hint": "",
     "level": ""
   },
   {
     "id": 43,
-    "word": "Balmy",
-    "meaning": "Pleasant/Gentle",
+    "word": "Refute",
+    "meaning": "Prove someone wrong",
+    "hint": "Contradiction",
+    "level": "HARD"
+  },
+  {
+    "id": 44,
+    "word": "Thwart",
+    "meaning": "To prevent someone from accomplishing something/Hindrance",
     "hint": "",
     "level": ""
   },
   {
-    "id": 44,
-    "word": "Barb",
-    "meaning": "Sarcastic/hurtful comment",
+    "id": 45,
+    "word": "Travail",
+    "meaning": "Painful laborious effort/Hard labor",
     "hint": "",
     "level": ""
   }
