@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Words List</title>
+    <title>Vocabulary Explorer</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,10 +16,7 @@
             height: 100vh;
             text-align: center;
         }
-        #word-list {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        #content {
             max-width: 90vw;
             max-height: 80vh;
             width: 70%;
@@ -28,17 +25,27 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
         #controls {
             display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            justify-content: center;
-            margin-top: 20px;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            width: 100%;
+        }
+        select {
+            font-size: 1rem;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
         button {
+            margin: 5px;
             padding: 10px 20px;
-            font-size: 2vw;
+            font-size: 1rem;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -51,165 +58,104 @@
         }
         #main-word {
             text-transform: uppercase;
-            font-size: clamp(5vw, 8vw, 10vw); /* Dynamically adjusts font size */
+            font-size: 5vw;
             margin-bottom: 20px;
-            word-wrap: break-word; /* Allows long words to wrap */
-            overflow-wrap: break-word; /* Additional wrap support for compatibility */
-            text-align: center; /* Ensures the word remains centered */
-            max-width: 100%; /* Ensures it doesn't exceed the container width */
-        }
-        #word-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            flex-wrap: wrap;
         }
         .revealable {
             display: none;
-            font-size: 3vw;
+            font-size: 1.2rem;
             margin: 10px 0;
-        }
-        #progress {
-            margin: 10px 0;
-            font-size: 2vw;
-            font-style: italic;
-        }
-        #progress-bar {
-            width: 100%;
-            background-color: #ddd;
-            border-radius: 5px;
-            margin-top: 10px;
-            overflow: hidden;
-        }
-        #progress-bar-inner {
-            height: 10px;
-            width: 0;
-            background-color: #007bff;
-            transition: width 0.3s ease;
-        }
-        #random-toggle {
-            padding: 10px 20px;
-            font-size: 2vw;
-            background-color: #6c757d;
-            color: #fff;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        #random-toggle.active {
-            background-color: #28a745;
-        }
-        @media (max-width: 600px) {
-            #main-word {
-                font-size: 10vw;
-            }
-            .revealable {
-                font-size: 3vw;
-            }
-            button {
-                font-size: 2.5vw;
-                padding: 1.5vw;
-            }
         }
     </style>
 </head>
 <body>
-    <div id="word-list">
-        <h2 id="progress">1/1</h2>
-        <div id="word-item">
-            <!-- Word content will be inserted here -->
-        </div>
+    <div id="content">
         <div id="controls">
-            <button id="prev-btn">Previous</button>
-            <button id="reveal-hint-btn">Show Hint</button>
-            <button id="reveal-meaning-btn">Show Meaning</button>
-            <button id="next-btn">Next</button>
-            <button id="random-toggle">Random OFF</button>
+            <select id="data-select">
+                <option value="words.json">Words</option>
+                <option value="idioms.json">Idioms</option>
+            </select>
+            <div>
+                <button id="prev-btn">Previous</button>
+                <button id="reveal-hint-btn">Show Hint</button>
+                <button id="reveal-meaning-btn">Show Meaning</button>
+                <button id="next-btn">Next</button>
+            </div>
         </div>
-        <div id="progress-bar">
-            <div id="progress-bar-inner"></div>
+        <div id="word-item">
+            <!-- Content will be inserted dynamically -->
         </div>
     </div>
+
     <script>
-        const fileUrl = 'https://thepankaj08.github.io/vocab/words.json';
-
-        let words = [];
+        const baseUrl = 'https://thepankaj08.github.io/vocab/';
+        let dataFile = 'words.json'; // Default file
+        let data = [];
         let currentIndex = 0;
-        let isRandom = false;
-        let randomOrder = [];
 
-        fetch(fileUrl)
-            .then(response => response.json())
-            .then(data => {
-                words = data;
-                initializeRandomOrder();
-                updateProgress();
-                displayWord(currentIndex);
-            })
-            .catch(error => console.error('Error loading words:', error));
+        document.getElementById('data-select').addEventListener('change', (event) => {
+            dataFile = event.target.value;
+            loadData(); // Reload data when the selection changes
+        });
 
-        function initializeRandomOrder() {
-            randomOrder = Array.from({ length: words.length }, (_, i) => i);
-            shuffleArray(randomOrder);
+        function loadData() {
+            fetch(baseUrl + dataFile)
+                .then(response => {
+                    if (!response.ok) throw new Error('Network response was not ok');
+                    return response.json();
+                })
+                .then(fetchedData => {
+                    data = fetchedData;
+                    currentIndex = 0; // Reset index
+                    displayItem(currentIndex);
+                })
+                .catch(error => console.error('Error loading data:', error));
         }
 
-        function shuffleArray(array) {
-            for (let i = array.length - 1; i > 0; i--) {
-                const j = Math.floor(Math.random() * (i + 1));
-                [array[i], array[j]] = [array[j], array[i]];
-            }
-        }
-
-        function displayWord(index) {
-            const wordIndex = isRandom ? randomOrder[index] : index;
+        function displayItem(index) {
+            const item = data[index];
             const wordItem = document.getElementById('word-item');
-            wordItem.innerHTML = `
-                <h2 id="main-word">${words[wordIndex].word}</h2>
-                <p id="word-hint" class="revealable"><strong>Hint:</strong> ${words[wordIndex].hint}</p>
-                <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${words[wordIndex].meaning}</p>
-            `;
-            updateProgress();
+
+            if (dataFile === 'words.json') {
+                wordItem.innerHTML = `
+                    <h2 id="main-word">${item.word}</h2>
+                    <p id="word-hint" class="revealable"><strong>Hint:</strong> ${item.hint}</p>
+                    <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
+                    <p id="word-level" class="revealable"><strong>Level:</strong> ${item.level}</p>
+                `;
+            } else if (dataFile === 'idioms.json') {
+                wordItem.innerHTML = `
+                    <h2 id="main-word">${item.idiom}</h2>
+                    <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
+                `;
+            }
+
+            // Reset visibility
             document.querySelectorAll('.revealable').forEach(elem => elem.style.display = 'none');
         }
 
-        function updateProgress() {
-            const progress = document.getElementById('progress');
-            const progressBarInner = document.getElementById('progress-bar-inner');
-            progress.textContent = `${currentIndex + 1}/${words.length}`;
-            progressBarInner.style.width = `${((currentIndex + 1) / words.length) * 100}%`;
-        }
-
         document.getElementById('prev-btn').addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : words.length - 1;
-            displayWord(currentIndex);
+            currentIndex = (currentIndex > 0) ? currentIndex - 1 : data.length - 1;
+            displayItem(currentIndex);
         });
 
         document.getElementById('next-btn').addEventListener('click', () => {
-            currentIndex = (currentIndex < words.length - 1) ? currentIndex + 1 : 0;
-            displayWord(currentIndex);
+            currentIndex = (currentIndex < data.length - 1) ? currentIndex + 1 : 0;
+            displayItem(currentIndex);
         });
 
         document.getElementById('reveal-hint-btn').addEventListener('click', () => {
-            toggleVisibility('word-hint');
+            const hintElement = document.getElementById('word-hint');
+            if (hintElement) hintElement.style.display = hintElement.style.display === 'block' ? 'none' : 'block';
         });
 
         document.getElementById('reveal-meaning-btn').addEventListener('click', () => {
-            toggleVisibility('word-meaning');
+            const meaningElement = document.getElementById('word-meaning');
+            if (meaningElement) meaningElement.style.display = meaningElement.style.display === 'block' ? 'none' : 'block';
         });
 
-        document.getElementById('random-toggle').addEventListener('click', (event) => {
-            isRandom = !isRandom;
-            currentIndex = 0; // Reset to first word
-            event.target.textContent = `Random ${isRandom ? 'ON' : 'OFF'}`;
-            event.target.classList.toggle('active', isRandom);
-            displayWord(currentIndex);
-        });
-
-        function toggleVisibility(id) {
-            const element = document.getElementById(id);
-            element.style.display = element.style.display === 'block' ? 'none' : 'block';
-        }
+        // Load initial data
+        loadData();
     </script>
 </body>
 </html>
