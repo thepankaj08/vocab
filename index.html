@@ -135,86 +135,110 @@
             <button id="reveal-hint-btn">Show Hint</button>
             <button id="reveal-meaning-btn">Show Meaning</button>
             <button id="next-btn">Next</button>
+            <button id="random-toggle">Random OFF</button>
         </div>
         <div id="progress-bar">
             <div id="progress-bar-inner"></div>
         </div>
     </div>
     <script>
-        const baseUrl = 'https://thepankaj08.github.io/vocab/';
-        let fileUrl = 'words.json';
-        let data = [];
-        let currentIndex = 0;
+    const baseUrl = 'https://thepankaj08.github.io/vocab/';
+    let fileUrl = 'words.json';
+    let data = [];
+    let currentIndex = 0;
+    let isRandom = false;
+    let randomOrder = [];
 
-        document.getElementById('data-select').addEventListener('change', (event) => {
-            fileUrl = event.target.value;
-            currentIndex = 0;
-            loadData();
-        });
-
-        function loadData() {
-            fetch(baseUrl + fileUrl)
-                .then(response => response.json())
-                .then(fetchedData => {
-                    data = fetchedData;
-                    updateProgress();
-                    displayWord(currentIndex);
-                })
-                .catch(error => console.error('Error loading data:', error));
-        }
-
-        function displayWord(index) {
-            const item = data[index];
-            const wordItem = document.getElementById('word-item');
-
-            if (fileUrl === 'words.json') {
-                wordItem.innerHTML = `
-                    <h2 id="main-word">${item.word}</h2>
-                    <p id="word-hint" class="revealable"><strong>Hint:</strong> ${item.hint}</p>
-                    <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
-                `;
-            } else if (fileUrl === 'idioms.json') {
-                wordItem.innerHTML = `
-                    <h2 id="main-word">${item.idiom}</h2>
-                    <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
-                `;
-            }
-
-            document.querySelectorAll('.revealable').forEach(elem => elem.style.display = 'none');
-        }
-
-        function updateProgress() {
-            const progress = document.getElementById('progress');
-            const progressBarInner = document.getElementById('progress-bar-inner');
-            progress.textContent = `${currentIndex + 1}/${data.length}`;
-            progressBarInner.style.width = `${((currentIndex + 1) / data.length) * 100}%`;
-        }
-
-        document.getElementById('prev-btn').addEventListener('click', () => {
-            currentIndex = (currentIndex > 0) ? currentIndex - 1 : data.length - 1;
-            displayWord(currentIndex);
-        });
-
-        document.getElementById('next-btn').addEventListener('click', () => {
-            currentIndex = (currentIndex < data.length - 1) ? currentIndex + 1 : 0;
-            displayWord(currentIndex);
-        });
-
-        document.getElementById('reveal-hint-btn').addEventListener('click', () => {
-            toggleVisibility('word-hint');
-        });
-
-        document.getElementById('reveal-meaning-btn').addEventListener('click', () => {
-            toggleVisibility('word-meaning');
-        });
-
-        function toggleVisibility(id) {
-            const element = document.getElementById(id);
-            element.style.display = element.style.display === 'block' ? 'none' : 'block';
-        }
-
-        // Load initial data
+    document.getElementById('data-select').addEventListener('change', (event) => {
+        fileUrl = event.target.value;
+        currentIndex = 0;
         loadData();
-    </script>
+    });
+
+    document.getElementById('random-toggle').addEventListener('click', () => {
+        isRandom = !isRandom;
+        currentIndex = 0; // Reset to first item when toggling
+        document.getElementById('random-toggle').textContent = `Random ${isRandom ? 'ON' : 'OFF'}`;
+        shuffleData();
+        displayWord(currentIndex);
+    });
+
+    function loadData() {
+        fetch(baseUrl + fileUrl)
+            .then(response => response.json())
+            .then(fetchedData => {
+                data = fetchedData;
+                if (isRandom) {
+                    shuffleData();
+                }
+                updateProgress();
+                displayWord(currentIndex);
+            })
+            .catch(error => console.error('Error loading data:', error));
+    }
+
+    function shuffleData() {
+        randomOrder = Array.from({ length: data.length }, (_, i) => i);
+        for (let i = randomOrder.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [randomOrder[i], randomOrder[j]] = [randomOrder[j], randomOrder[i]];
+        }
+    }
+
+    function displayWord(index) {
+        const item = data[isRandom ? randomOrder[index] : index];
+        const wordItem = document.getElementById('word-item');
+
+        if (fileUrl === 'words.json') {
+            wordItem.innerHTML = `
+                <h2 id="main-word">${item.word}</h2>
+                <p id="word-hint" class="revealable"><strong>Hint:</strong> ${item.hint}</p>
+                <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
+            `;
+        } else if (fileUrl === 'idioms.json') {
+            wordItem.innerHTML = `
+                <h2 id="main-word">${item.idiom}</h2>
+                <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
+            `;
+        }
+
+        document.querySelectorAll('.revealable').forEach(elem => elem.style.display = 'none');
+        updateProgress();
+    }
+
+    function updateProgress() {
+        const progress = document.getElementById('progress');
+        const progressBarInner = document.getElementById('progress-bar-inner');
+        progress.textContent = `${currentIndex + 1}/${data.length}`;
+        progressBarInner.style.width = `${((currentIndex + 1) / data.length) * 100}%`;
+    }
+
+    document.getElementById('prev-btn').addEventListener('click', () => {
+        currentIndex = (currentIndex > 0) ? currentIndex - 1 : data.length - 1;
+        displayWord(currentIndex);
+    });
+
+    document.getElementById('next-btn').addEventListener('click', () => {
+        currentIndex = (currentIndex < data.length - 1) ? currentIndex + 1 : 0;
+        displayWord(currentIndex);
+    });
+
+    document.getElementById('reveal-hint-btn').addEventListener('click', () => {
+        toggleVisibility('word-hint');
+    });
+
+    document.getElementById('reveal-meaning-btn').addEventListener('click', () => {
+        toggleVisibility('word-meaning');
+    });
+
+    function toggleVisibility(id) {
+        const element = document.getElementById(id);
+        element.style.display = element.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Load initial data
+    loadData();
+</script>
+
 </body>
 </html>
