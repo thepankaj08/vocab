@@ -116,8 +116,19 @@
                 font-size: 2.5vw;
                 padding: 1.5vw;
             }
+            #random-toggle{
+            padding: 8px 5px;
+            font-size: 1.5vw;
+            background-color: grey;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+            
             #random-toggle.active {
-            background-color: #28a745;
+            background-color: green;
         }
     </style>
 </head>
@@ -132,12 +143,11 @@
             <!-- Word content will be inserted here -->
         </div>
         <div id="controls">
-            
             <button id="prev-btn">Previous</button>
             <button id="reveal-hint-btn">Show Hint</button>
             <button id="reveal-meaning-btn">Show Meaning</button>
             <button id="next-btn">Next</button>
-            <button id="random-toggle" style="background-color:grey;>Random OFF</button>
+            <button id="random-toggle">Random OFF</button>
         </div>
         <div id="progress-bar">
             <div id="progress-bar-inner"></div>
