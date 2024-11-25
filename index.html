@@ -30,13 +30,13 @@
             overflow: auto;
         }
         #controls {
-            margin-top: 20px;
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
             justify-content: center;
+            margin-top: 20px;
         }
-        button, input[type="checkbox"] {
+        button {
             padding: 10px 20px;
             font-size: 3vw;
             background-color: #007bff;
@@ -59,9 +59,34 @@
             font-size: 4vw;
             margin: 10px 0;
         }
-        #random-checkbox-label {
+        #progress {
+            margin: 10px 0;
+            font-size: 4vw;
+        }
+        #progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        #progress-bar-inner {
+            height: 10px;
+            width: 0;
+            background-color: #007bff;
+            transition: width 0.3s ease;
+        }
+        #random-toggle {
+            padding: 10px 20px;
             font-size: 3vw;
+            background-color: #6c757d;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
             cursor: pointer;
+        }
+        #random-toggle.active {
+            background-color: #28a745;
         }
         @media (max-width: 600px) {
             #main-word {
@@ -70,31 +95,28 @@
             .revealable {
                 font-size: 6vw;
             }
-            button, input[type="checkbox"] {
+            button {
                 font-size: 4vw;
                 padding: 5vw;
-            }
-            #random-checkbox-label {
-                font-size: 4vw;
             }
         }
     </style>
 </head>
 <body>
     <div id="word-list">
-        <div id="controls">
-            <button id="prev-btn">Previous</button>
-            <label id="random-checkbox-label">
-                <input type="checkbox" id="random-checkbox"> Random
-            </label>
-            <button id="next-btn">Next</button>
+        <h2 id="progress">1/1</h2>
+        <div id="progress-bar">
+            <div id="progress-bar-inner"></div>
         </div>
         <div id="word-item">
             <!-- Word content will be inserted here -->
         </div>
         <div id="controls">
+            <button id="prev-btn">Previous</button>
             <button id="reveal-hint-btn">Show Hint</button>
             <button id="reveal-meaning-btn">Show Meaning</button>
+            <button id="next-btn">Next</button>
+            <button id="random-toggle">Random OFF</button>
         </div>
     </div>
     <script>
@@ -110,6 +132,7 @@
             .then(data => {
                 words = data;
                 initializeRandomOrder();
+                updateProgress();
                 displayWord(currentIndex);
             })
             .catch(error => console.error('Error loading words:', error));
@@ -134,7 +157,15 @@
                 <p id="word-hint" class="revealable"><strong>Hint:</strong> ${words[wordIndex].hint}</p>
                 <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${words[wordIndex].meaning}</p>
             `;
+            updateProgress();
             document.querySelectorAll('.revealable').forEach(elem => elem.style.display = 'none');
+        }
+
+        function updateProgress() {
+            const progress = document.getElementById('progress');
+            const progressBarInner = document.getElementById('progress-bar-inner');
+            progress.textContent = `${currentIndex + 1}/${words.length}`;
+            progressBarInner.style.width = `${((currentIndex + 1) / words.length) * 100}%`;
         }
 
         document.getElementById('prev-btn').addEventListener('click', () => {
@@ -155,9 +186,11 @@
             toggleVisibility('word-meaning');
         });
 
-        document.getElementById('random-checkbox').addEventListener('change', (event) => {
-            isRandom = event.target.checked;
-            currentIndex = 0; 
+        document.getElementById('random-toggle').addEventListener('click', (event) => {
+            isRandom = !isRandom;
+            currentIndex = 0; // Reset to first word
+            event.target.textContent = `Random ${isRandom ? 'ON' : 'OFF'}`;
+            event.target.classList.toggle('active', isRandom);
             displayWord(currentIndex);
         });
 
