@@ -49,6 +49,19 @@
         button:hover, select:hover {
             background-color: #0056b3;
         }
+        select {
+            padding: 10px 20px;
+            font-size: 2vw;
+            background-color: #628fb5aa;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        select:hover {
+            background-color: #3d4e5daa;
+        }
         #main-word {
             text-transform: uppercase;
             font-size: clamp(5vw, 8vw, 10vw);
@@ -105,8 +118,8 @@
 <body>
     <div id="word-list">
         <select id="data-select">
-                <option value="words.json">Words</option>
-                <option value="idioms.json">Idioms</option>
+                <option value="words.json">WORDS</option>
+                <option value="idioms.json">IDIOMS</option>
             </select>
         <h2 id="progress">1/1</h2>
         <div id="word-item">
