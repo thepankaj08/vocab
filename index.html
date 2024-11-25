@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vocabulary Explorer</title>
+    <title>Words and Idioms</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -16,7 +16,10 @@
             height: 100vh;
             text-align: center;
         }
-        #content {
+        #word-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             max-width: 90vw;
             max-height: 80vh;
             width: 70%;
@@ -25,27 +28,17 @@
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             overflow: auto;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
         }
         #controls {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 20px;
-            width: 100%;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 20px;
         }
-        select {
-            font-size: 1rem;
-            padding: 5px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            margin: 5px;
+        button, select {
             padding: 10px 20px;
-            font-size: 1rem;
+            font-size: 2vw;
             background-color: #007bff;
             color: #fff;
             border: none;
@@ -53,106 +46,154 @@
             cursor: pointer;
             transition: background-color 0.3s;
         }
-        button:hover {
+        button:hover, select:hover {
             background-color: #0056b3;
         }
         #main-word {
             text-transform: uppercase;
-            font-size: 5vw;
+            font-size: clamp(5vw, 8vw, 10vw);
             margin-bottom: 20px;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
+            text-align: center;
+            max-width: 100%;
+        }
+        #word-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            flex-wrap: wrap;
         }
         .revealable {
             display: none;
-            font-size: 1.2rem;
+            font-size: 3vw;
             margin: 10px 0;
+        }
+        #progress {
+            margin: 10px 0;
+            font-size: 2vw;
+            font-style: italic;
+        }
+        #progress-bar {
+            width: 100%;
+            background-color: #ddd;
+            border-radius: 5px;
+            margin-top: 10px;
+            overflow: hidden;
+        }
+        #progress-bar-inner {
+            height: 10px;
+            width: 0;
+            background-color: #007bff;
+            transition: width 0.3s ease;
+        }
+        @media (max-width: 600px) {
+            #main-word {
+                font-size: 10vw;
+            }
+            .revealable {
+                font-size: 3vw;
+            }
+            button {
+                font-size: 2.5vw;
+                padding: 1.5vw;
+            }
         }
     </style>
 </head>
 <body>
-    <div id="content">
+    <div id="word-list">
         <div id="controls">
             <select id="data-select">
                 <option value="words.json">Words</option>
                 <option value="idioms.json">Idioms</option>
             </select>
-            <div>
-                <button id="prev-btn">Previous</button>
-                <button id="reveal-hint-btn">Show Hint</button>
-                <button id="reveal-meaning-btn">Show Meaning</button>
-                <button id="next-btn">Next</button>
-            </div>
+            <button id="prev-btn">Previous</button>
+            <button id="reveal-hint-btn">Show Hint</button>
+            <button id="reveal-meaning-btn">Show Meaning</button>
+            <button id="next-btn">Next</button>
         </div>
+        <h2 id="progress">1/1</h2>
         <div id="word-item">
-            <!-- Content will be inserted dynamically -->
+            <!-- Word content will be inserted here -->
+        </div>
+        <div id="progress-bar">
+            <div id="progress-bar-inner"></div>
         </div>
     </div>
-
     <script>
         const baseUrl = 'https://thepankaj08.github.io/vocab/';
-        let dataFile = 'words.json'; // Default file
+        let fileUrl = 'words.json';
         let data = [];
         let currentIndex = 0;
 
         document.getElementById('data-select').addEventListener('change', (event) => {
-            dataFile = event.target.value;
-            loadData(); // Reload data when the selection changes
+            fileUrl = event.target.value;
+            currentIndex = 0;
+            loadData();
         });
 
         function loadData() {
-            fetch(baseUrl + dataFile)
-                .then(response => {
-                    if (!response.ok) throw new Error('Network response was not ok');
-                    return response.json();
-                })
+            fetch(baseUrl + fileUrl)
+                .then(response => response.json())
                 .then(fetchedData => {
                     data = fetchedData;
-                    currentIndex = 0; // Reset index
-                    displayItem(currentIndex);
+                    updateProgress();
+                    displayWord(currentIndex);
                 })
                 .catch(error => console.error('Error loading data:', error));
         }
 
-        function displayItem(index) {
+        function displayWord(index) {
             const item = data[index];
             const wordItem = document.getElementById('word-item');
 
-            if (dataFile === 'words.json') {
+            if (fileUrl === 'words.json') {
                 wordItem.innerHTML = `
                     <h2 id="main-word">${item.word}</h2>
                     <p id="word-hint" class="revealable"><strong>Hint:</strong> ${item.hint}</p>
                     <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
-                    <p id="word-level" class="revealable"><strong>Level:</strong> ${item.level}</p>
                 `;
-            } else if (dataFile === 'idioms.json') {
+            } else if (fileUrl === 'idioms.json') {
                 wordItem.innerHTML = `
                     <h2 id="main-word">${item.idiom}</h2>
                     <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
                 `;
             }
 
-            // Reset visibility
             document.querySelectorAll('.revealable').forEach(elem => elem.style.display = 'none');
+        }
+
+        function updateProgress() {
+            const progress = document.getElementById('progress');
+            const progressBarInner = document.getElementById('progress-bar-inner');
+            progress.textContent = `${currentIndex + 1}/${data.length}`;
+            progressBarInner.style.width = `${((currentIndex + 1) / data.length) * 100}%`;
         }
 
         document.getElementById('prev-btn').addEventListener('click', () => {
             currentIndex = (currentIndex > 0) ? currentIndex - 1 : data.length - 1;
-            displayItem(currentIndex);
+            displayWord(currentIndex);
         });
 
         document.getElementById('next-btn').addEventListener('click', () => {
             currentIndex = (currentIndex < data.length - 1) ? currentIndex + 1 : 0;
-            displayItem(currentIndex);
+            displayWord(currentIndex);
         });
 
         document.getElementById('reveal-hint-btn').addEventListener('click', () => {
-            const hintElement = document.getElementById('word-hint');
-            if (hintElement) hintElement.style.display = hintElement.style.display === 'block' ? 'none' : 'block';
+            toggleVisibility('word-hint');
         });
 
         document.getElementById('reveal-meaning-btn').addEventListener('click', () => {
-            const meaningElement = document.getElementById('word-meaning');
-            if (meaningElement) meaningElement.style.display = meaningElement.style.display === 'block' ? 'none' : 'block';
+            toggleVisibility('word-meaning');
         });
+
+        function toggleVisibility(id) {
+            const element = document.getElementById(id);
+            element.style.display = element.style.display === 'block' ? 'none' : 'block';
+        }
 
         // Load initial data
         loadData();
