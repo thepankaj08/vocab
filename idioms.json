@@ -3,5 +3,275 @@
     "id": 1,
     "idiom": "High Handed",
     "meaning": "arrogant authority"
+  },
+  {
+    "id": 2,
+    "idiom": "A damp squib ",
+    "meaning": "Disappointing result"
+  },
+  {
+    "id": 3,
+    "idiom": "Dogs breakfast ",
+    "meaning": "A mess"
+  },
+  {
+    "id": 4,
+    "idiom": "A little gush of the gratitude ",
+    "meaning": "Friendly feeling"
+  },
+  {
+    "id": 5,
+    "idiom": "A mare?s nest",
+    "meaning": "Difficult/False"
+  },
+  {
+    "id": 6,
+    "idiom": "A nig nog",
+    "meaning": "A fool"
+  },
+  {
+    "id": 7,
+    "idiom": "A shot in the arm",
+    "meaning": "Encouraging stimulus "
+  },
+  {
+    "id": 8,
+    "idiom": "A stuffed shirt",
+    "meaning": "Pompous or self important person"
+  },
+  {
+    "id": 9,
+    "idiom": "All agog",
+    "meaning": "Excited, eager, curious "
+  },
+  {
+    "id": 10,
+    "idiom": "Bad hats",
+    "meaning": "Bad character "
+  },
+  {
+    "id": 11,
+    "idiom": "Bad iron",
+    "meaning": "Bad luck"
+  },
+  {
+    "id": 12,
+    "idiom": "Banana oil",
+    "meaning": "Nonsensical talk"
+  },
+  {
+    "id": 13,
+    "idiom": "Bang for the buck",
+    "meaning": "Good value for money"
+  },
+  {
+    "id": 14,
+    "idiom": "Be in the red",
+    "meaning": "Debt"
+  },
+  {
+    "id": 15,
+    "idiom": "Beyond pale",
+    "meaning": "Unacceptable/unreasonable"
+  },
+  {
+    "id": 16,
+    "idiom": "Cast someone adrift ",
+    "meaning": "Leave someone without any support or purpose"
+  },
+  {
+    "id": 17,
+    "idiom": "Catch time by forelock",
+    "meaning": "Seize the opportunity "
+  },
+  {
+    "id": 18,
+    "idiom": "Cloven hoof",
+    "meaning": "Evil intentions"
+  },
+  {
+    "id": 19,
+    "idiom": "Curry favour",
+    "meaning": "Sycophancy/ cajolement"
+  },
+  {
+    "id": 20,
+    "idiom": "Cut to the quick",
+    "meaning": "Hurt intensely "
+  },
+  {
+    "id": 21,
+    "idiom": "Dead ringer",
+    "meaning": "Exact duplicate "
+  },
+  {
+    "id": 22,
+    "idiom": "Cut the mustard ",
+    "meaning": "Perform well/ succeed "
+  },
+  {
+    "id": 23,
+    "idiom": "Do away with",
+    "meaning": "Abolish"
+  },
+  {
+    "id": 24,
+    "idiom": "Far cry",
+    "meaning": "Very different/ poles apart "
+  },
+  {
+    "id": 25,
+    "idiom": "Full of hot air",
+    "meaning": "Full of nonsense "
+  },
+  {
+    "id": 26,
+    "idiom": "Gall and warmwood",
+    "meaning": "Hateful"
+  },
+  {
+    "id": 27,
+    "idiom": "Gerrymander",
+    "meaning": "Manipulative / unfair way"
+  },
+  {
+    "id": 28,
+    "idiom": "Dressing down",
+    "meaning": "Scolding"
+  },
+  {
+    "id": 29,
+    "idiom": "Feel the pinch",
+    "meaning": "Sudden financial problem"
+  },
+  {
+    "id": 30,
+    "idiom": "Get on like a house on fire",
+    "meaning": "Become friends quickly "
+  },
+  {
+    "id": 31,
+    "idiom": "Go belly up",
+    "meaning": "Bankruptcy "
+  },
+  {
+    "id": 32,
+    "idiom": "Go to the jugular ",
+    "meaning": "Attack aggressively "
+  },
+  {
+    "id": 33,
+    "idiom": "Grasp at straws ",
+    "meaning": "Trying everything possible as nothing likely to works"
+  },
+  {
+    "id": 34,
+    "idiom": "Hand over fist",
+    "meaning": "Quickly and continuously "
+  },
+  {
+    "id": 35,
+    "idiom": "High on the hog",
+    "meaning": "Luxurious/costly"
+  },
+  {
+    "id": 36,
+    "idiom": "In a flutter",
+    "meaning": "Nervous"
+  },
+  {
+    "id": 37,
+    "idiom": "In a queer street",
+    "meaning": "Bankrupt"
+  },
+  {
+    "id": 38,
+    "idiom": "In raptures ",
+    "meaning": "Extremely delightful "
+  },
+  {
+    "id": 39,
+    "idiom": "In the offing ",
+    "meaning": "Appear soon"
+  },
+  {
+    "id": 40,
+    "idiom": "In the pink",
+    "meaning": "In good health"
+  },
+  {
+    "id": 41,
+    "idiom": "In the same breath",
+    "meaning": "Say two contradictory statements"
+  },
+  {
+    "id": 42,
+    "idiom": "In the swim",
+    "meaning": "Well informed and up to date"
+  },
+  {
+    "id": 43,
+    "idiom": "In the teeth of",
+    "meaning": "Directly against"
+  },
+  {
+    "id": 44,
+    "idiom": "Judas kiss",
+    "meaning": "Deceitful pretence of friendship "
+  },
+  {
+    "id": 45,
+    "idiom": "Kicked up a row",
+    "meaning": "Cause commotion or disturbance"
+  },
+  {
+    "id": 46,
+    "idiom": "Kitty corners",
+    "meaning": "Diagonally opposite "
+  },
+  {
+    "id": 47,
+    "idiom": "Laying it on thick",
+    "meaning": "Exaggeration "
+  },
+  {
+    "id": 48,
+    "idiom": "Lean and mean",
+    "meaning": "Ready and efficient "
+  },
+  {
+    "id": 49,
+    "idiom": "Learn/know the ropes",
+    "meaning": "Learn/know the details of a job"
+  },
+  {
+    "id": 50,
+    "idiom": "Let your hair down",
+    "meaning": "Relaxed "
+  },
+  {
+    "id": 51,
+    "idiom": "Like a shag on the rock",
+    "meaning": "Left alone"
+  },
+  {
+    "id": 52,
+    "idiom": "Loaves and fishes",
+    "meaning": "Materialistic wealth"
+  },
+  {
+    "id": 53,
+    "idiom": "Long in the tooth",
+    "meaning": "Too old to do something "
+  },
+  {
+    "id": 54,
+    "idiom": "Lose your marbles ",
+    "meaning": "Become insanse"
+  },
+  {
+    "id": 55,
+    "idiom": "Make a hash of ",
+    "meaning": "Make a mess"
   }
 ]
