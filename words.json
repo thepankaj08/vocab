@@ -607,5 +607,12 @@
     "meaning": "Disease cause for which is unknown",
     "hint": "",
     "level": ""
+  },
+  {
+    "id": 88,
+    "word": "Malign",
+    "meaning": "Malicious/ Harmful",
+    "hint": "",
+    "level": ""
   }
 ]
