@@ -199,8 +199,12 @@
             .then(fetchedData => {
                 data = fetchedData;
                 if (isRandom) {
+                    randomToggleButton.style.backgroundColor = '#4CAF50'; // Green for ON
+                    randomToggleButton.style.color = '#ffffff'; // White text
                     shuffleData();
                 }
+                randomToggleButton.style.backgroundColor = '#f44336'; // Red for OFF
+                randomToggleButton.style.color = '#ffffff'; // White text
                 updateProgress();
                 displayWord(currentIndex);
             })
