@@ -154,7 +154,7 @@
         </div>
         <div id="controls">
             <button id="prev-btn">Previous</button>
-            <button id="reveal-hint-btn">Antonym</button>
+            <button id="reveal-hint-btn">Synonym</button>
             <button id="reveal-meaning-btn">Show Meaning</button>
             <button id="next-btn">Next</button>
             <button id="random-toggle">Random OFF</button>
@@ -226,7 +226,7 @@
         if (fileUrl === 'words.json') {
             wordItem.innerHTML = `
                 <h2 id="main-word">${item.word}</h2>
-                <p id="word-hint" class="revealable"><strong>Antonym:</strong> ${item.hint}</p>
+                <p id="word-hint" class="revealable"><strong>Synonym:</strong> ${item.hint}</p>
                 <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
             `;
         } else if (fileUrl === 'idioms.json') {
