@@ -175,6 +175,14 @@
         isRandom = !isRandom;
         currentIndex = 0; // Reset to first item when toggling
         document.getElementById('random-toggle').textContent = `Random ${isRandom ? 'ON' : 'OFF'}`;
+        // Change button color
+        if (isRandom) {
+            randomToggleButton.style.backgroundColor = '#4CAF50'; // Green for ON
+            randomToggleButton.style.color = '#ffffff'; // White text
+        } else {
+            randomToggleButton.style.backgroundColor = '#f44336'; // Red for OFF
+            randomToggleButton.style.color = '#ffffff'; // White text
+        }
         shuffleData();
         displayWord(currentIndex);
     });
@@ -208,7 +216,7 @@
         if (fileUrl === 'words.json') {
             wordItem.innerHTML = `
                 <h2 id="main-word">${item.word}</h2>
-                <p id="word-hint" class="revealable"><strong>Hint:</strong> ${item.hint}</p>
+                <p id="word-hint" class="revealable"><strong>Antonym:</strong> ${item.hint}</p>
                 <p id="word-meaning" class="revealable"><strong>Meaning:</strong> ${item.meaning}</p>
             `;
         } else if (fileUrl === 'idioms.json') {
