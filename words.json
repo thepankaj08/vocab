@@ -149,7 +149,7 @@
   {
     "id": 22,
     "word": "Esoteric ",
-    "meaning": "Understood by only few with special knowledge ",
+    "meaning": "Understood by only few with special knowledge/ Arcane",
     "hint": "Not known to everyone ",
     "level": "MEDIUM"
   },
@@ -380,7 +380,7 @@
   {
     "id": 55,
     "word": "Contrite",
-    "meaning": "Showing deep sorrow for wrongdoings",
+    "meaning": "Penitence/Showing deep sorrow for wrongdoings",
     "hint": "",
     "level": ""
   },
@@ -388,7 +388,7 @@
     "id": 56,
     "word": "Tacky",
     "meaning": "Bad taste and quality ",
-    "hint": "",
+    "hint": "Tawdry",
     "level": ""
   },
   {
@@ -641,6 +641,13 @@
     "word": "Arcane",
     "meaning": "Understood by few, mysterious or secret ",
     "hint": "",
+    "level": ""
+  },
+  {
+    "id": 93,
+    "word": "Aplomb",
+    "meaning": "Self Confidence/ Self assurance ",
+    "hint": "Diffident ",
     "level": ""
   }
 ]
