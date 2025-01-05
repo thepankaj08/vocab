@@ -170,6 +170,7 @@
     let currentIndex = 0;
     let isRandom = false;
     let randomOrder = [];
+    const randomToggleButton = document.getElementById('random-toggle');
 
     document.getElementById('data-select').addEventListener('change', (event) => {
         fileUrl = event.target.value;
@@ -183,9 +184,11 @@
         document.getElementById('random-toggle').textContent = `Random ${isRandom ? 'ON' : 'OFF'}`;
         // Change button color
         if (isRandom) {
+            const randomToggleButton = document.getElementById('random-toggle');
             randomToggleButton.style.backgroundColor = '#4CAF50'; // Green for ON
             randomToggleButton.style.color = '#ffffff'; // White text
         } else {
+            const randomToggleButton = document.getElementById('random-toggle');
             randomToggleButton.style.backgroundColor = '#f44336'; // Red for OFF
             randomToggleButton.style.color = '#ffffff'; // White text
         }
@@ -199,10 +202,12 @@
             .then(fetchedData => {
                 data = fetchedData;
                 if (isRandom) {
+                    const randomToggleButton = document.getElementById('random-toggle');
                     randomToggleButton.style.backgroundColor = '#4CAF50'; // Green for ON
                     randomToggleButton.style.color = '#ffffff'; // White text
                     shuffleData();
                 }
+                const randomToggleButton = document.getElementById('random-toggle');
                 randomToggleButton.style.backgroundColor = '#f44336'; // Red for OFF
                 randomToggleButton.style.color = '#ffffff'; // White text
                 updateProgress();
