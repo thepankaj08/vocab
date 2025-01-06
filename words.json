@@ -647,14 +647,21 @@
     "id": 93,
     "word": "Aplomb",
     "meaning": "Self Confidence/ Self assurance ",
-    "hint": "Diffident ",
+    "hint": "",
     "level": ""
   },
   {
     "id": 94,
     "word": "Impenitent ",
     "meaning": "Not feeling shame or sorry for actions",
-    "hint": "Apologetic ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 95,
+    "word": "Brevity",
+    "meaning": "Concise",
+    "hint": "Succinct, terse, pithy",
     "level": ""
   }
 ]
