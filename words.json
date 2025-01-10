@@ -691,5 +691,12 @@
     "meaning": "Approval/ Agreement ",
     "hint": "",
     "level": ""
+  },
+  {
+    "id": 100,
+    "word": "Interdiction",
+    "meaning": "Prohibit/ forbid ",
+    "hint": "",
+    "level": ""
   }
 ]
