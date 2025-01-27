@@ -3,665 +3,665 @@
     "id": 1,
     "word": "Abet",
     "meaning": "Accomplice",
-    "hint": "help",
+    "hint": "Partner in crime",
     "level": "MEDIUM"
   },
   {
     "id": 2,
-    "word": "Badinage ",
-    "meaning": "Playful ridicule",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 3,
-    "word": "Balmy",
-    "meaning": "Pleasant/Gentle",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 4,
-    "word": "Barb",
-    "meaning": "Sarcastic/hurtful comment",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 5,
-    "word": "Caucus",
-    "meaning": "Party meeting to elect candidate",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 6,
-    "word": "Charlatan ",
-    "meaning": "False claim of skull or knowledge",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 7,
-    "word": "Churlish",
-    "meaning": "Rude",
-    "hint": "bad/negative/not polite",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 8,
-    "word": "Compere",
-    "meaning": "Who introduces performers on stage",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 9,
-    "word": "confedrate",
-    "meaning": "Agreement",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 10,
-    "word": "Corpus",
-    "meaning": "Collection of our written text",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 11,
-    "word": "Delirium ",
-    "meaning": "Disturbed state of mind",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 12,
-    "word": "Deprecate",
-    "meaning": "Strong disapproval",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 13,
-    "word": "Deride",
-    "meaning": "Laugh at something in cruel way",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 14,
-    "word": "Effete",
-    "meaning": "Infertile/weak/incapable",
-    "hint": "",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 15,
-    "word": "Elixir",
-    "meaning": "Substance that can cure/imporve something",
-    "hint": "amrit",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 16,
-    "word": "Embargo",
-    "meaning": "Official order to stop doing business",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 17,
-    "word": "Enigmatic ",
-    "meaning": "Difficult to understand",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 18,
-    "word": "Epistle ",
-    "meaning": "King serious letter on important subject",
-    "hint": "Letter",
-    "level": "HARD"
-  },
-  {
-    "id": 19,
-    "word": "Epithet",
-    "meaning": "Defamatory words or phrases ",
-    "hint": "adjective name",
-    "level": "EASY"
-  },
-  {
-    "id": 20,
-    "word": "Ergomania ",
-    "meaning": "Extreme desire to work",
-    "hint": "",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 21,
-    "word": "Erudition ",
-    "meaning": "Profound scholarly knowledge ",
-    "hint": "scholar knowledge",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 22,
-    "word": "Esoteric ",
-    "meaning": "Understood by only few with special knowledge/ Arcane",
-    "hint": "Not known to everyone ",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 23,
-    "word": "Etiology/Aetiology",
-    "meaning": "Study of cause of disease ",
-    "hint": "Study of cause of____",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 24,
-    "word": "Exasperate",
-    "meaning": "Annoy or make someone angry",
-    "hint": "Negative word",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 25,
-    "word": "Exultant",
-    "meaning": "Joyful or happy",
-    "hint": "Positive wors",
-    "level": "EASY"
-  },
-  {
-    "id": 26,
-    "word": "Feign",
-    "meaning": "Pretend ",
-    "hint": "",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 27,
-    "word": "Fervent",
-    "meaning": "Very strong and sincere feeling about something.",
-    "hint": "curious",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 28,
-    "word": "Fluke",
-    "meaning": "Accidental good fortune",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 29,
-    "word": "Histrionic",
-    "meaning": "Very dramatic",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 30,
-    "word": "idyllic",
-    "meaning": "extreme happy",
-    "hint": "positive word",
-    "level": "EASY"
-  },
-  {
-    "id": 31,
-    "word": "Imbroglio",
-    "meaning": "Very complex situation",
-    "hint": "",
-    "level": "HARD"
-  },
-  {
-    "id": 32,
-    "word": "Impale",
-    "meaning": "Pierce through",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 33,
-    "word": "Imperious ",
-    "meaning": "Arrogant/demanding",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 34,
-    "word": "Inexorable ",
-    "meaning": "Impossible to stop or prevent",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 35,
-    "word": "Ingratiate ",
-    "meaning": "Flatter to gain favour",
-    "hint": "Cajoling ",
-    "level": ""
-  },
-  {
-    "id": 36,
-    "word": "Inquisitive ",
-    "meaning": "Curious",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 37,
-    "word": "Irascible ",
-    "meaning": "Who easily gets irritated",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 38,
-    "word": "Jingoism",
-    "meaning": "Extreme Patriotism ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 39,
-    "word": "Limpid",
-    "meaning": "clear",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 40,
-    "word": "Preponderance ",
-    "meaning": "Abundant",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 41,
-    "word": "Profligate",
-    "meaning": "Recklessly extravagant",
-    "hint": "Spend",
-    "level": "MEDIUM"
-  },
-  {
-    "id": 42,
-    "word": "Proletariat ",
-    "meaning": "Working class people",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 43,
-    "word": "Refute",
-    "meaning": "Prove someone wrong",
-    "hint": "Contradiction",
-    "level": "HARD"
-  },
-  {
-    "id": 44,
-    "word": "Thwart",
-    "meaning": "To prevent someone from accomplishing something/Hindrance",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 45,
-    "word": "Travail",
-    "meaning": "Painful laborious effort/Hard labor",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 46,
-    "word": "Poignant ",
-    "meaning": "Strong emotional sense often sadness or pity",
-    "hint": "Touching",
-    "level": ""
-  },
-  {
-    "id": 47,
-    "word": "Polemical ",
-    "meaning": "Pertaining to controversy ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 48,
-    "word": "Quixotic ",
-    "meaning": "Too idealistic to be achieved ",
-    "hint": "Unrealistically optimistic ",
-    "level": ""
-  },
-  {
-    "id": 49,
-    "word": "Ascribe",
-    "meaning": "To give credit for",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 50,
-    "word": "Retinue",
-    "meaning": "Servants",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 51,
-    "word": "Boorish",
-    "meaning": "Rustic/ rough and ill mannered person",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 52,
-    "word": "Canophilia",
-    "meaning": "Love for dogs",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 53,
-    "word": "Catacomb",
-    "meaning": "An underground cemetery consisting of tunnels and rooms with spaces for tombs.",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 54,
-    "word": "Chagrin",
-    "meaning": "a feeling of being disappointed, annoyed or humiliated",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 55,
-    "word": "Contrite",
-    "meaning": "Penitence/Showing deep sorrow for wrongdoings",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 56,
-    "word": "Tacky",
-    "meaning": "Bad taste and quality ",
-    "hint": "Tawdry",
-    "level": ""
-  },
-  {
-    "id": 57,
-    "word": "Tortuous",
-    "meaning": "Full of twist and turn",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 58,
-    "word": "Travesty ",
-    "meaning": "A distorted/ridiculous/absurd representation ",
-    "hint": "The trial was a travesty of justice with no fair progress",
-    "level": ""
-  },
-  {
-    "id": 59,
-    "word": "Truculent ",
-    "meaning": "Defiantly aggressive",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 60,
-    "word": "Waif",
-    "meaning": "Homeless abandoned child",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 61,
-    "word": "Reverie",
-    "meaning": "Absent minded ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 62,
-    "word": "August",
-    "meaning": "Majestic ",
-    "hint": "Regal/",
-    "level": ""
-  },
-  {
-    "id": 63,
-    "word": "Anathema ",
-    "meaning": "Something that you hate because it is opposite of what you believe",
-    "hint": "Not liking",
-    "level": ""
-  },
-  {
-    "id": 64,
-    "word": "Munificent ",
-    "meaning": "Extremely Generous ",
-    "hint": "Magnanimous",
-    "level": ""
-  },
-  {
-    "id": 65,
-    "word": "Brazen",
-    "meaning": "Bold and without shame",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 66,
-    "word": "Assimilate",
-    "meaning": "Group together ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 67,
-    "word": "Dissimulate",
-    "meaning": "Hide/ Disguise ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 68,
-    "word": "Doyen",
-    "meaning": "Oldest member/ most experienced ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 69,
-    "word": "Figment",
-    "meaning": "Imagined; that does not exist ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 70,
-    "word": "Facile",
-    "meaning": "Easily achieved",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 71,
     "word": "Abrogate",
     "meaning": "Officially end an agreement or law",
     "hint": "",
     "level": ""
   },
   {
-    "id": 72,
-    "word": "Blandishments ",
-    "meaning": "Flattery",
-    "hint": "Servile/ Obsequious ",
+    "id": 3,
+    "word": "Accost",
+    "meaning": "Confront",
+    "hint": "Approach someone boldly ",
     "level": ""
   },
   {
-    "id": 73,
-    "word": "Equanimity ",
-    "meaning": "Calm temper and mind",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 74,
-    "word": "Gnosiophobia",
-    "meaning": "Fear of knowledge ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 75,
-    "word": "Newfangled ",
-    "meaning": "New/Unfamiliar that is not liked",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 76,
-    "word": "Extol",
-    "meaning": "Praise enthusiastically ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 77,
+    "id": 4,
     "word": "Adulation ",
     "meaning": "Please/Flatter someone",
     "hint": "",
     "level": ""
   },
   {
-    "id": 78,
-    "word": "Blandishment",
-    "meaning": "Flatter or please someone",
-    "hint": "",
+    "id": 5,
+    "word": "Anathema ",
+    "meaning": "Something that you hate because it is opposite of what you believe",
+    "hint": "Not liking",
     "level": ""
   },
   {
-    "id": 79,
-    "word": "Servile",
-    "meaning": "Excessive willingness to serve or please others ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 80,
-    "word": "Obsequious ",
-    "meaning": "Servile",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 81,
-    "word": "Dulcify",
-    "meaning": "Make sweeter in taste",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 82,
-    "word": "Enamour",
-    "meaning": "In love with",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 83,
-    "word": "Odyssey ",
-    "meaning": "Expedition/ voyage",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 84,
-    "word": "Foray",
-    "meaning": "Sudden attack/ Incursion ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 85,
-    "word": "Cantankerous ",
-    "meaning": "bad-tempered and complaining most of the time",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 86,
-    "word": "Inimical ",
-    "meaning": "Harmful/ Hostile",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 87,
-    "word": "Idiopathic ",
-    "meaning": "Disease cause for which is unknown",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 88,
-    "word": "Malign",
-    "meaning": "Malicious/ Harmful",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 89,
-    "word": "Conviction",
-    "meaning": "1. Convict/ 2. Strong faith or belief ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 90,
-    "word": "Devolution ",
-    "meaning": "Transfer of power/fund from higher to lower authority ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 91,
-    "word": "Somniferous",
-    "meaning": "Makes you feel asleep ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 92,
-    "word": "Arcane",
-    "meaning": "Understood by few, mysterious or secret ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 93,
+    "id": 6,
     "word": "Aplomb",
     "meaning": "Self Confidence/ Self assurance ",
     "hint": "",
     "level": ""
   },
   {
-    "id": 94,
+    "id": 7,
+    "word": "Approbation ",
+    "meaning": "Approval/ Agreement ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 8,
+    "word": "Arcane",
+    "meaning": "Understood by few, mysterious or secret ",
+    "hint": "Esoteric ",
+    "level": ""
+  },
+  {
+    "id": 9,
+    "word": "Ascribe",
+    "meaning": "To give credit for",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 10,
+    "word": "Assimilate",
+    "meaning": "Group together ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 11,
+    "word": "August",
+    "meaning": "Majestic ",
+    "hint": "Regal/",
+    "level": ""
+  },
+  {
+    "id": 12,
+    "word": "Badinage ",
+    "meaning": "Playful ridicule",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 13,
+    "word": "Balmy",
+    "meaning": "Pleasant/Gentle",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 14,
+    "word": "Barb",
+    "meaning": "Sarcastic/hurtful comment",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 15,
+    "word": "Blandishment",
+    "meaning": "Flatter or please someone",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 16,
+    "word": "Blandishments ",
+    "meaning": "Flattery",
+    "hint": "Servile/ Obsequious ",
+    "level": ""
+  },
+  {
+    "id": 17,
+    "word": "Boorish",
+    "meaning": "Bucolic/Rustic/ rough and ill mannered person",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 18,
+    "word": "Brazen",
+    "meaning": "Bold and without shame",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 19,
+    "word": "Brevity",
+    "meaning": "Concise",
+    "hint": "Succinct, terse, pithy",
+    "level": ""
+  },
+  {
+    "id": 20,
+    "word": "Canophilia",
+    "meaning": "Love for dogs",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 21,
+    "word": "Cantankerous ",
+    "meaning": "bad-tempered and complaining most of the time",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 22,
+    "word": "Catacomb",
+    "meaning": "An underground cemetery consisting of tunnels and rooms with spaces for tombs.",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 23,
+    "word": "Caucus",
+    "meaning": "Party meeting to elect candidate",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 24,
+    "word": "Chagrin",
+    "meaning": "a feeling of being disappointed, annoyed or humiliated",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 25,
+    "word": "Charlatan ",
+    "meaning": "False claim of skull or knowledge",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 26,
+    "word": "Churlish",
+    "meaning": "Rude",
+    "hint": "bad/negative/not polite",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 27,
+    "word": "Comely",
+    "meaning": "Pleasant to look at; attractive ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 28,
+    "word": "Compere",
+    "meaning": "Who introduces performers on stage",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 29,
+    "word": "confedrate",
+    "meaning": "Agreement",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 30,
+    "word": "Contrite",
+    "meaning": "Showing deep sorrow for wrongdoings",
+    "hint": "Penitence",
+    "level": ""
+  },
+  {
+    "id": 31,
+    "word": "Conviction",
+    "meaning": "1. Convict/ 2. Strong faith or belief ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 32,
+    "word": "Copious",
+    "meaning": "Abundant ",
+    "hint": "Plentiful/ Profuse",
+    "level": ""
+  },
+  {
+    "id": 33,
+    "word": "Corpulent ",
+    "meaning": "Obesse, fat, fleshy, thick",
+    "hint": "Mota",
+    "level": ""
+  },
+  {
+    "id": 34,
+    "word": "Corpus",
+    "meaning": "Collection of our written text",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 35,
+    "word": "Delirium ",
+    "meaning": "Disturbed state of mind",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 36,
+    "word": "Deprecate",
+    "meaning": "Strong disapproval",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 37,
+    "word": "Deride",
+    "meaning": "Laugh at something in cruel way",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 38,
+    "word": "Devolution ",
+    "meaning": "Transfer of power/fund from higher to lower authority ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 39,
+    "word": "Dissimulate",
+    "meaning": "Hide/ Disguise ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 40,
+    "word": "Doyen",
+    "meaning": "Oldest member/ most experienced ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 41,
+    "word": "Dulcify",
+    "meaning": "Make sweeter in taste",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 42,
+    "word": "Enamour",
+    "meaning": "In love with",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 43,
+    "word": "Enigmatic ",
+    "meaning": "Difficult to understand",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 44,
+    "word": "Epithet",
+    "meaning": "Defamatory words or phrases ",
+    "hint": "adjective name",
+    "level": "EASY"
+  },
+  {
+    "id": 45,
+    "word": "Equanimity ",
+    "meaning": "Calm temper and mind",
+    "hint": "stolity",
+    "level": ""
+  },
+  {
+    "id": 46,
+    "word": "Erudition ",
+    "meaning": "Profound scholarly knowledge ",
+    "hint": "scholar knowledge",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 47,
+    "word": "Esoteric ",
+    "meaning": "Understood by only few with special knowledge/ Arcane",
+    "hint": "Not known to everyone ",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 48,
+    "word": "Etiology/Aetiology",
+    "meaning": "Study of cause of disease ",
+    "hint": "Study of cause of____",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 49,
+    "word": "Extol",
+    "meaning": "Praise enthusiastically ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 50,
+    "word": "Exultant",
+    "meaning": "Joyful or happy",
+    "hint": "Positive word",
+    "level": "EASY"
+  },
+  {
+    "id": 51,
+    "word": "Facile",
+    "meaning": "Easily achieved",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 52,
+    "word": "Famished ",
+    "meaning": "Hungry, needy",
+    "hint": "Ravenous, voracious ",
+    "level": ""
+  },
+  {
+    "id": 53,
+    "word": "Feign",
+    "meaning": "Pretend ",
+    "hint": "",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 54,
+    "word": "Fervent",
+    "meaning": "Very strong and sincere feeling about something.",
+    "hint": "curious",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 55,
+    "word": "Figment",
+    "meaning": "Imagined; that does not exist ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 56,
+    "word": "Fluke",
+    "meaning": "Accidental good fortune",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 57,
+    "word": "Foray",
+    "meaning": "Sudden attack/ Incursion ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 58,
+    "word": "Gnosiophobia",
+    "meaning": "Fear of knowledge ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 59,
+    "word": "Hebetude",
+    "meaning": "Being dull and lethargic ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 60,
+    "word": "Histrionic",
+    "meaning": "Very dramatic",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 61,
+    "word": "Idiopathic ",
+    "meaning": "Disease cause for which is unknown",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 62,
+    "word": "Impale",
+    "meaning": "Pierce through",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 63,
     "word": "Impenitent ",
     "meaning": "Not feeling shame or sorry for actions",
     "hint": "",
     "level": ""
   },
   {
+    "id": 64,
+    "word": "Imperious ",
+    "meaning": "Arrogant/demanding",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 65,
+    "word": "Implore",
+    "meaning": "Beg someone earnestly(sincerely)",
+    "hint": "Beseech",
+    "level": ""
+  },
+  {
+    "id": 66,
+    "word": "Inexorable ",
+    "meaning": "Impossible to stop or prevent",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 67,
+    "word": "Ingratiate ",
+    "meaning": "Flatter to gain favour",
+    "hint": "Cajoling ",
+    "level": ""
+  },
+  {
+    "id": 68,
+    "word": "Inimical ",
+    "meaning": "Harmful/ Hostile",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 69,
+    "word": "Inquisitive ",
+    "meaning": "Curious",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 70,
+    "word": "Interdiction",
+    "meaning": "Prohibit/ forbid ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 71,
+    "word": "Irascible ",
+    "meaning": "Who easily gets irritated",
+    "hint": "Petulant ",
+    "level": ""
+  },
+  {
+    "id": 72,
+    "word": "Jingoism",
+    "meaning": "Extreme Patriotism ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 73,
+    "word": "Limpid",
+    "meaning": "clear",
+    "hint": "conspicuous",
+    "level": ""
+  },
+  {
+    "id": 74,
+    "word": "Malign",
+    "meaning": "Malicious/ Harmful",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 75,
+    "word": "Munificent ",
+    "meaning": "Extremely Generous ",
+    "hint": "Magnanimous",
+    "level": ""
+  },
+  {
+    "id": 76,
+    "word": "Newfangled ",
+    "meaning": "New/Unfamiliar that is not liked",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 77,
+    "word": "Obsequious ",
+    "meaning": "Servile",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 78,
+    "word": "Odyssey ",
+    "meaning": "Expedition/ voyage",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 79,
+    "word": "Poignant ",
+    "meaning": "Strong emotional sense often sadness or pity",
+    "hint": "Touching",
+    "level": ""
+  },
+  {
+    "id": 80,
+    "word": "Polemical ",
+    "meaning": "Pertaining to controversy ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 81,
+    "word": "Preponderance ",
+    "meaning": "Abundant",
+    "hint": "glut/copious",
+    "level": ""
+  },
+  {
+    "id": 82,
+    "word": "Profligate",
+    "meaning": "Recklessly extravagant",
+    "hint": "prodigal",
+    "level": "MEDIUM"
+  },
+  {
+    "id": 83,
+    "word": "Proletariat ",
+    "meaning": "Working class people",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 84,
+    "word": "Quixotic ",
+    "meaning": "Too idealistic to be achieved ",
+    "hint": "Unrealistically optimistic ",
+    "level": ""
+  },
+  {
+    "id": 85,
+    "word": "Refute",
+    "meaning": "Prove someone wrong",
+    "hint": "Contradiction",
+    "level": "HARD"
+  },
+  {
+    "id": 86,
+    "word": "Retinue",
+    "meaning": "Servants",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 87,
+    "word": "Reverie",
+    "meaning": "Absent minded ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 88,
+    "word": "Servile",
+    "meaning": "Excessive willingness to serve or please others ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 89,
+    "word": "Somniferous",
+    "meaning": "Makes you feel asleep ",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 90,
+    "word": "Tacky",
+    "meaning": "Bad taste and quality ",
+    "hint": "Tawdry",
+    "level": ""
+  },
+  {
+    "id": 91,
+    "word": "Thwart",
+    "meaning": "To prevent someone from accomplishing something/Hindrance",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 92,
+    "word": "Tortuous",
+    "meaning": "Full of twist and turn",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 93,
+    "word": "Travail",
+    "meaning": "Painful laborious effort/Hard labor",
+    "hint": "",
+    "level": ""
+  },
+  {
+    "id": 94,
+    "word": "Travesty ",
+    "meaning": "A distorted/ridiculous/absurd representation ",
+    "hint": "The trial was a travesty of justice with no fair progress",
+    "level": ""
+  },
+  {
     "id": 95,
-    "word": "Brevity",
-    "meaning": "Concise",
-    "hint": "Succinct, terse, pithy",
+    "word": "Truculent ",
+    "meaning": "Defiantly aggressive",
+    "hint": "",
     "level": ""
   },
   {
@@ -673,72 +673,23 @@
   },
   {
     "id": 97,
-    "word": "Copious",
-    "meaning": "Abundant ",
-    "hint": "Plentiful/ Profuse",
-    "level": ""
-  },
-  {
-    "id": 98,
-    "word": "Corpulent ",
-    "meaning": "Obesse, fat, fleshy, thick",
-    "hint": "Mota",
-    "level": ""
-  },
-  {
-    "id": 99,
-    "word": "Approbation ",
-    "meaning": "Approval/ Agreement ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 100,
-    "word": "Interdiction",
-    "meaning": "Prohibit/ forbid ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 101,
-    "word": "Accost",
-    "meaning": "Confront",
-    "hint": "Approach someone boldly ",
-    "level": ""
-  },
-  {
-    "id": 102,
-    "word": "Comely",
-    "meaning": "Pleasant to look at; attractive ",
-    "hint": "",
-    "level": ""
-  },
-  {
-    "id": 103,
     "word": "Upbraid",
     "meaning": "Reprimand/ Chastise",
     "hint": "",
     "level": ""
   },
   {
-    "id": 104,
-    "word": "Implore",
-    "meaning": "Beg someone earnestly(sincerely)",
+    "id": 98,
+    "word": "Waif",
+    "meaning": "Homeless abandoned child",
     "hint": "",
     "level": ""
   },
   {
-    "id": 105,
-    "word": "Hebetude",
-    "meaning": "Being dull and lethargic ",
+    "id": 99,
+    "word": "Susceptible ",
+    "meaning": "Easily affected or influenced by",
     "hint": "",
-    "level": ""
-  },
-  {
-    "id": 106,
-    "word": "Famished ",
-    "meaning": "Hungry, needy",
-    "hint": "Ravenous, voracious ",
     "level": ""
   }
 ]
